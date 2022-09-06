@@ -7,10 +7,10 @@ const Redis = require("../../helper/Redis.helper");
 
 const Web3 = require("web3");
 
-const DeathKingdomCoin = require("../../../../Contract/demo-client/contracts/DeathKingdomCoin.json");
-const TankNFT = require("../../../../Contract/demo-client/contracts/TankNFT.json");
-const Marketplace = require("../../../../Contract/demo-client/contracts/Marketplace.json");
-const LinkWallet = require("../../../../Contract/demo-client/contracts/LinkWallet.json");
+const DeathKingdomCoin = require("../../Contract/demo-client/contracts/DeathKingdomCoin.json");
+const TankNFT = require("../../Contract/demo-client/contracts/TankNFT.json");
+const Marketplace = require("../../Contract/demo-client/contracts/Marketplace.json");
+const LinkWallet = require("../../Contract/demo-client/contracts/LinkWallet.json");
 
 class UserService {
   constructor() {

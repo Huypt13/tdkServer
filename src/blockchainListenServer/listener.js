@@ -6,9 +6,9 @@ const MarketPlaceItem = require("../api/marketPlaceItem/MarketPlaceItem.Service"
 
 const TankUserService = require("../api/hero/TankUser.service");
 
-const TankNFT = require("../../../Contract/demo-client/contracts/TankNFT.json");
-const Marketplace = require("../../../Contract/demo-client/contracts/Marketplace.json");
-const DeathKingdomCoin = require("../../../Contract/demo-client/contracts/DeathKingdomCoin.json");
+const TankNFT = require("../Contract/demo-client/contracts/TankNFT.json");
+const Marketplace = require("../Contract/demo-client/contracts/Marketplace.json");
+const DeathKingdomCoin = require("../Contract/demo-client/contracts/DeathKingdomCoin.json");
 
 const Database = require("../../src/api/database/Database");
 const BoxService = require("../api/box/Box.service");

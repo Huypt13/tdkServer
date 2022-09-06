@@ -1,6 +1,6 @@
 const amqp = require("amqplib");
 
-const queue = "notification_queue";
+const queue = "notification_queue1";
 
 var connection;
 
@@ -202,7 +202,10 @@ async function boughtBoxNotify(data) {
       JSON.stringify({
         pattern: "boughtBox",
         data: {
-          url, email, price,message
+          url,
+          email,
+          price,
+          message,
         },
       })
     ),
@@ -212,4 +215,13 @@ async function boughtBoxNotify(data) {
     }
   );
 }
-module.exports = { connectRabbitMQ, registerNotify, soldNotify, boughtNotify, cancelNotify, listedNotify, resetPasswordNotify, boughtBoxNotify } 
+module.exports = {
+  connectRabbitMQ,
+  registerNotify,
+  soldNotify,
+  boughtNotify,
+  cancelNotify,
+  listedNotify,
+  resetPasswordNotify,
+  boughtBoxNotify,
+};
